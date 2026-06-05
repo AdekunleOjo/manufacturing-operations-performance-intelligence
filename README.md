@@ -40,97 +40,7 @@ This solution was developed to answer key operational questions:
 - What future operational risks are emerging?
 
 ---
-
-# 📊 Dashboard Architecture
-
-The solution is structured into six analytical modules:
-
-### 1️⃣ Manufacturing Operations & Overall Plant Performance Overview
-
-Provides an executive view of manufacturing performance through key operational KPIs.
-
-**Focus Areas**
-
-- Production Output
-- Production Efficiency
-- OEE Performance
-- Production Variance
-- Quality Performance
-- Operational Effectiveness
-
----
-
-### 2️⃣ Capacity Recovery & Production Loss Analysis
-
-Identifies hidden production losses and opportunities to recover manufacturing capacity.
-
-**Focus Areas**
-
-- Capacity Utilization
-- Capacity Loss
-- Recoverable Capacity
-- Production Variance
-- Production Loss Drivers
-
----
-
-### 3️⃣ Downtime & Maintenance Intelligence Center
-
-Evaluates equipment reliability and maintenance effectiveness.
-
-**Focus Areas**
-
-- Downtime Duration
-- Downtime Incidents
-- Downtime Causes
-- Maintenance Response Time
-- Machine Risk Assessment
-
----
-
-### 4️⃣ Quality, Waste & Rework Analytics
-
-Analyzes manufacturing quality performance and hidden process losses.
-
-**Focus Areas**
-
-- Quality Pass Rate
-- Waste Generation
-- Defective Units
-- Rework Recovery
-- Process Quality Performance
-
----
-
-### 5️⃣ Shift Performance & Operational Risk Analysis
-
-Evaluates operational stability across shifts and production lines.
-
-**Focus Areas**
-
-- Shift Efficiency
-- Production Loss
-- Waste
-- Downtime
-- Operational Risk
-
----
-
-### 6️⃣ Predictive Manufacturing Analytics
-
-Forecasts future manufacturing performance using historical operational trends.
-
-**Focus Areas**
-
-- Production Loss Forecasting
-- Downtime Forecasting
-- Waste Forecasting
-- Defect Forecasting
-- Operational Risk Forecasting
-
----
-
-# 🧮 Manufacturing KPI Framework
+## 🧮 Manufacturing KPI Framework
 
 The following manufacturing KPIs were developed using DAX and industry-standard manufacturing methodologies.
 
@@ -147,93 +57,183 @@ The following manufacturing KPIs were developed using DAX and industry-standard 
 | Machine Risk Score | Downtime + Frequency + Response Time + Production Impact |
 
 ---
+### Overall Equipment Effectiveness (OEE)
 
-# 📈 Key Findings
+```text
+OEE = Availability × Performance × Quality
+```
 
-## Production Performance
+| KPI | Value |
+|------|--------|
+| OEE | 58% |
+| Availability | 66% |
+| Performance | 91% |
+| Quality Pass Rate | 94% |
 
-The manufacturing operation achieved strong production efficiency (~91%), indicating that production processes perform effectively when equipment is available.
+---
+### Production Achievement
 
-However, production output remained below planned targets, creating approximately **43,000 MT of recoverable capacity**.
+```text
+Production Achievement % = Actual Output ÷ Planned Output
+```
+---
+### Capacity Utilization
 
-### Business Implication
+```text
+Capacity Utilization % = Actual Output ÷ Planned Output × 100
+```
 
-The operation is not constrained by process capability but by operational interruptions and availability losses.
+**Result:** 91%
+
+----
+### Recoverable Capacity
+
+```text
+Recoverable Capacity = Planned Output − Actual Output
+```
+
+**Result:** 43,000 MT
+
+----
+### Capacity Loss %
+
+```text
+Capacity Loss % = Recoverable Capacity ÷ Planned Output × 100
+```
+
+**Result:** 9.33%
+
+----
+### Rework Recovery Rate
+
+```text
+Rework Recovery Rate = Rework Units ÷ Defective Units × 100
+```
+
+**Result:** 51%
+
+----
+### Machine Risk Score
+
+A composite metric developed using:
+
+- Downtime Duration
+- Downtime Frequency
+- Maintenance Response Time
+- Production Impact
 
 ---
 
-## Capacity Recovery Opportunity
+# 📊 Dashboard Architecture
 
-Analysis identified approximately **9.33% capacity loss**, representing one of the largest improvement opportunities within the facility.
+The solution is structured into six analytical modules:
 
-### Business Implication
+### 1️⃣ Manufacturing Operations & Overall Plant Performance Overview
 
-Additional production output can potentially be achieved without major capital investment by eliminating operational losses.
+The operation produced approximately 417,585 MT during the reporting period while achieving 91% production efficiency. However, equipment availability remained at 66%, limiting overall manufacturing performance and contributing to an estimated 43,000 MT production shortfall. The analysis indicates that improving equipment reliability and reducing downtime present the greatest opportunities for increasing output without additional capacity investment.
 
----
+**Focus Areas**
 
-## Downtime & Reliability
-
-The facility experienced:
-
-- 4,101 Downtime Hours
-- 5,314 Downtime Incidents
-
-The highest-risk assets included:
-
-- Filler
-- Conveyor
-- Deodorizer
-
-### Business Implication
-
-Equipment reliability is currently the primary constraint limiting OEE performance.
+- Production Output
+- Production Efficiency
+- OEE Performance
+- Production Variance
+- Quality Performance
+- Operational Effectiveness
 
 ---
 
-## Quality Performance
+### 2️⃣ Capacity Recovery & Production Loss Analysis
 
-The operation achieved:
+The analysis identified approximately 43,000 MT of recoverable production capacity, representing 9.33% unrealized capacity during the reporting period. While overall capacity utilization remained high at 91%, production losses were concentrated within specific operations, indicating localized inefficiencies rather than plant-wide performance issues.
 
-- 94% Quality Pass Rate
-- 7,569 Defective Units
-- 3,840 Rework Units
-- 663.89 MT Waste
+These findings highlight significant opportunities to increase output through downtime reduction, process optimization, and operational stability improvements before considering additional capital investment.
 
-The Extraction Line generated the highest waste levels.
+**Focus Areas**
 
-### Business Implication
-
-While overall quality performance is strong, process-level waste reduction remains a major improvement opportunity.
-
----
-
-## Shift Performance
-
-Analysis revealed:
-
-✅ Morning Shift = Best Performing Shift
-
-⚠️ Afternoon Shift = Lowest Performing Shift
-
-### Business Implication
-
-Operational outcomes are influenced not only by equipment but also by workforce practices, supervision, and shift management effectiveness.
+- Capacity Utilization
+- Capacity Loss
+- Recoverable Capacity
+- Production Variance
+- Production Loss Drivers
 
 ---
 
-## Predictive Insights
+### 3️⃣ Downtime & Maintenance Intelligence Analysis
 
-Forecasting analysis suggests:
+Downtime is the primary constraint on plant performance, with 4,101 hours of downtime across 5,314 incidents, indicating frequent and significant operational interruptions.
 
-- Downtime incidents are increasing over time
-- Production losses are expected to persist if no corrective action is taken
-- Waste generation remains volatile
-- Reliability risk is growing faster than efficiency risk
+Key causes of downtime include power failures, mechanical breakdowns, material shortages, maintenance delays, and operator error, highlighting a mix of technical and process-related issues.
 
-### Business Implication
+Asset-level analysis shows the Filler as the highest-risk machine, followed by the Conveyor and Deodorizer systems, due to higher downtime exposure and slower recovery times.
 
-Future operational performance will be determined primarily by maintenance effectiveness and equipment reliability improvements.
+Additionally, downtime incidents have increased by approximately 15% over the reporting period, suggesting a declining reliability trend that could further impact equipment availability if not addressed.
+
+**Focus Areas**
+
+- Downtime Duration
+- Downtime Incidents
+- Downtime Causes
+- Maintenance Response Time
+- Machine Risk Assessment
+
+---
+
+### 4️⃣ Quality, Waste & Rework Analytics
+
+The operation maintained strong quality performance with a 94% pass rate, despite producing 7,569 defective units, 3,840 rework units, and 663.89 MT of waste.
+
+Approximately 51% of defective output was recovered through rework, demonstrating effective recovery capability but also highlighting hidden costs in materials, energy, and production time.
+
+The Extraction Line was identified as the highest contributor to waste, representing the primary opportunity for quality improvement, while the Packaging Line recorded the lowest waste and may serve as a performance benchmark.
+
+Overall, the analysis indicates that reducing defects at source would deliver greater value than relying on rework-based recovery.
+
+**Focus Areas**
+
+- Quality Pass Rate
+- Waste Generation
+- Defective Units
+- Rework Recovery
+- Process Quality Performance
+
+---
+
+### 5️⃣ Shift Performance & Operational Risk Analysis
+
+Shift-level analysis shows clear performance variation across production periods. The Morning Shift consistently delivered the strongest results across efficiency, waste, and downtime metrics, while the Afternoon Shift performed weakest and represents the main opportunity for improvement.
+
+These differences suggest that operational performance is influenced not only by equipment reliability but also by workforce execution, supervision quality, and shift management practices.
+
+Although overall operational risk remains relatively balanced, inconsistency during afternoon operations increases variability in output and performance.
+
+Reducing shift-to-shift variation is a key priority for improving overall plant stability and achieving more consistent manufacturing performance.
+
+**Focus Areas**
+
+- Shift Efficiency
+- Production Loss
+- Waste
+- Downtime
+- Operational Risk
+
+---
+
+### 6️⃣ Predictive Manufacturing Analytics
+
+Forecasting analysis indicates that production efficiency will likely remain stable at ~90–91%, showing sustained production capability. However, emerging reliability risks are evident, with downtime incidents increasing by approximately 15% over the reporting period.
+
+If current conditions persist, production losses are expected to remain between 3,000–4,000 MT per week, while waste and defect levels are likely to remain volatile due to ongoing process variability.
+
+Overall, future performance will be driven more by equipment reliability and operational stability than by production efficiency, making downtime reduction and process consistency key priorities.
+
+**Focus Areas**
+
+- Production Loss Forecasting
+- Downtime Forecasting
+- Waste Forecasting
+- Defect Forecasting
+- Operational Risk Forecasting
 
 ---
 
@@ -279,18 +279,13 @@ Successful implementation of the recommendations could result in:
 
 # 🛠️ Tools & Technologies
 
+- Excel
 - Power BI
 - DAX
 - Power Query
 - Manufacturing KPI Frameworks
 - Forecasting & Trend Analysis
 - Operational Risk Analytics
-
----
-
-# 📷 Dashboard Preview
-
-> Add dashboard screenshots here
 
 ---
 
