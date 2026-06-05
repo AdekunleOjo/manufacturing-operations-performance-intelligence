@@ -1,12 +1,12 @@
-# 🏭 Manufacturing Operations & Performance Intelligence
+# 🏭 Manufacturing Performance & Operational Intelligence
 
 ## 📌 Project Overview
 
-This project delivers an end-to-end Manufacturing Operations Analytics solution developed in Power BI to transform production, maintenance, quality, and operational data into actionable business intelligence.
+This project presents a comprehensive Manufacturing Performance & Operational Intelligence solution designed to evaluate production performance, equipment effectiveness, capacity utilization, maintenance efficiency, quality outcomes, and operational risk across a manufacturing environment.
 
-The solution was designed to support manufacturing leaders in identifying operational inefficiencies, reducing downtime, improving equipment effectiveness, recovering lost production capacity, and proactively managing operational risk.
+The analysis uncovers hidden production losses, downtime impacts, quality-related inefficiencies, and capacity recovery opportunities while providing visibility into the operational factors influencing overall manufacturing performance.
 
-Rather than focusing solely on historical reporting, the project combines operational performance monitoring, capacity analysis, maintenance intelligence, quality analytics, risk assessment, and predictive forecasting to support data-driven decision-making.
+By combining operational performance monitoring, production loss analysis, downtime analysis, quality analysis, risk assessment, and predictive forecasting, the solution delivers actionable insights that support operational excellence and continuous improvement.
 
 ---
 
