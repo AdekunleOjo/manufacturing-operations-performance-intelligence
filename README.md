@@ -130,6 +130,8 @@ The solution is structured into six analytical modules:
 
 ### 1️⃣ Manufacturing Operations & Overall Plant Performance Overview
 
+![manufacturing-operations-performance-intelligence](https://github.com/AdekunleOjo/manufacturing-operations-performance-intelligence/blob/main/Dashboard_Overview.jpg)
+
 The operation produced approximately 417,585 MT during the reporting period while achieving 91% production efficiency. However, equipment availability remained at 66%, limiting overall manufacturing performance and contributing to an estimated 43,000 MT production shortfall. The analysis indicates that improving equipment reliability and reducing downtime present the greatest opportunities for increasing output without additional capacity investment.
 
 **Focus Areas**
@@ -144,6 +146,8 @@ The operation produced approximately 417,585 MT during the reporting period whil
 ---
 
 ### 2️⃣ Capacity Recovery & Production Loss Analysis
+
+![manufacturing-operations-performance-intelligence](https://github.com/AdekunleOjo/manufacturing-operations-performance-intelligence/blob/main/Dashboard_Production%20Loss.jpg)
 
 The analysis identified approximately 43,000 MT of recoverable production capacity, representing 9.33% unrealized capacity during the reporting period. While overall capacity utilization remained high at 91%, production losses were concentrated within specific operations, indicating localized inefficiencies rather than plant-wide performance issues.
 
@@ -160,6 +164,8 @@ These findings highlight significant opportunities to increase output through do
 ---
 
 ### 3️⃣ Downtime & Maintenance Intelligence Analysis
+
+![manufacturing-operations-performance-intelligence](https://github.com/AdekunleOjo/manufacturing-operations-performance-intelligence/blob/main/Dashboard_Downtime.jpg)
 
 Downtime is the primary constraint on plant performance, with 4,101 hours of downtime across 5,314 incidents, indicating frequent and significant operational interruptions.
 
@@ -180,6 +186,8 @@ Additionally, downtime incidents have increased by approximately 15% over the re
 ---
 
 ### 4️⃣ Quality, Waste & Rework Analytics
+
+![manufacturing-operations-performance-intelligence](https://github.com/AdekunleOjo/manufacturing-operations-performance-intelligence/blob/main/Dashboard_Quality%20%26%20Waste.jpg)
 
 The operation maintained strong quality performance with a 94% pass rate, despite producing 7,569 defective units, 3,840 rework units, and 663.89 MT of waste.
 
@@ -220,6 +228,8 @@ Reducing shift-to-shift variation is a key priority for improving overall plant 
 ---
 
 ### 6️⃣ Predictive Manufacturing Analytics
+
+![manufacturing-operations-performance-intelligence](https://github.com/AdekunleOjo/manufacturing-operations-performance-intelligence/blob/main/Dashboard_Predictive.jpg)
 
 Forecasting analysis indicates that production efficiency will likely remain stable at ~90–91%, showing sustained production capability. However, emerging reliability risks are evident, with downtime incidents increasing by approximately 15% over the reporting period.
 
