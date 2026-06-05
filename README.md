@@ -209,6 +209,8 @@ Overall, the analysis indicates that reducing defects at source would deliver gr
 
 ### 5️⃣ Shift Performance & Operational Risk Analysis
 
+![manufacturing-operations-performance-intelligence](https://github.com/AdekunleOjo/manufacturing-operations-performance-intelligence/blob/main/Dashboard_Shift%20%26%20Risk%20Analysis.jpg)
+
 Shift-level analysis shows clear performance variation across production periods. The Morning Shift consistently delivered the strongest results across efficiency, waste, and downtime metrics, while the Afternoon Shift performed weakest and represents the main opportunity for improvement.
 
 These differences suggest that operational performance is influenced not only by equipment reliability but also by workforce execution, supervision quality, and shift management practices.
